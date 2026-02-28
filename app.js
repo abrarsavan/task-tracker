@@ -47,3 +47,8 @@ addBtn.addEventListener("click", addTask);
 taskInput.addEventListener("keypress", function (e) {
     if (e.key === "Enter") addTask();
 });
+
+document.getElementById("clearBtn").addEventListener("click", function () {
+    tasks.length = 0;
+    renderTasks();
+});
