@@ -21,6 +21,7 @@ function renderTasks() {
 
         taskList.appendChild(li);
     });
+    document.getElementById("counter").textContent = tasks.length + " task(s)";
 }
 
 function addTask() {
